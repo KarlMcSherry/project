@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script type=text/javascript src="scripts.js"> </script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js">
+        </script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+       
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+        Dublin on a Budget
+        </title>
+    </head>
+    <body>
+        
+        <div class= "navbar-static-top navbar">
+            <div class = "container">
+                    <button class="navbar-toggle blue" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Navigation
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse blue">
+				<ul class="nav navbar-nav navbar-right blue">
+					<li><a id="nav1" href="index.html">Home</a></li>
+					<li><a id="nav2" href="livingcost.html">Living Expenses</a></li>
+					<li><a id="nav3" href="nightlife.html">Nightlife</a></li>
+					<li><a id="nav4" href="transport.html">Transportation</a></li>
+				</ul>
+			</div>
+            </div>
+        </div>
+        <div class = "container">
+            <div class= "col-md-12 blue top jumbotron "> 
+            <h1> Transportation </h1>
+                <p> Transportation in Dublin can be quite expensive compared to many other cities   in Europe, however, there are some ways to save. </p>
+            </div>
+            <div class = "row">
+            <div class = "col-md-5 col-sm-12 blue margin ">
+                <h2>Leap Card</h2>
+                <p> The Leap Card is Dublin's travel card, someone using a Leap Card can top it up with travel credit, and rather than paying for their fare with cash, they can pay for their fare electronically, Leap Card offers daily and weekly capping, along with discounts for individual fares.</p>
+                <ul>
+                <li> Leap Card carries a €10 daily cap across all services, and a €40 weekly cap.</li>
+                <li> Leap Card carries a €6.90 daily cap on Dublin bus, and a €27.50 weekly cap.</li>
+                <li> Leap Card carries a €6.40 daily cap on Luas and a €23.50 weekly cap. </li>
+                <li> Leap Card carries a €9.20 daily cap on DART and Commuter Rail and a €35.50 weekly cap.</li>
+                </ul>
+            </div>
+            <div class = "col-md-5 col-sm-12 blue margin ui-widget-content ">
+                <h2>Dublin Bus</h2>
+                <p> Dublin Bus is the primary bus provider of Dublin, Dublin Bus serves all areas of the city, and is the only transport provider in Dublin to do so.</p>
+                <ul>
+                    <li>Regular Dublin Bus fares range between €1.50 and €2.60 using a Leap Card and €2.00 and €3.30 using cash. </li>
+                    <li>Dublin Bus offers multiple "non standard" services. </li>
+                    <li>The Airlink between Dublin Airport and Dublin City Centre costs €6.00 one way, or €10.00 return, whether using Leap Card, cash or a pre-paid ticket. </li>
+                    <li> The Nitelink is Dublin Bus' service that runs after 00:00 on Friday and Saturday, it costs €5.20 via Leap Card, or €6.50 via cash or pre-paid ticket. </li>
+                    <li> Non-standard routes will only contribute €2.60 towards the Leap Card cap. </li>
+                </ul>
+            </div>
+            </div>
+        <div class = "row">
+            <div class = "col-md-5 col-sm-12 blue margin ">
+                <h2>Luas</h2>
+                <p>Luas is a tram provider in Dublin, Luas operates in southside sub-urban areas and in Dublin City Centre.</p>
+                <ul>
+                    <li>Luas fares vary between €1.90 and €3.10 when paying using cash and €1.39 and €2.45 when paying using Leap Card.</li>
+                    <li> Luas offers multiple types of pre-paid travel tickets.</li>
+                    <li> Students can purchase a 7 day travel pass for between €11.70 and €18.50, depending on distance. A monthly pass costs between €44.00 and €72.50.</li>
+                    <li>Luas flexi-tickets allow for multiple days of travel, they are available for 1 day at the price of €6.80, 7 days at the price of €24.90 and 30 days at the price of €98.00. </li>
+                </ul>
+            </div>
+            <div class = "col-md-5 col-sm-12 blue margin">
+                <h2>Taxi</h2>
+                <p>Taxis are available all over Dublin, either to hail on the street, to order on phone, or to order from an app such as Hailo or Uber.</p>
+                <ul>
+                    <li>Taxi fares in Dublin start at, for standard and premium(between 20:00 and 8:00) fares, respectively, €3.60/€4.00, with a distance allowance of 500m and a waiting time allowance of 85 seconds. After this, fares are calculated at €1.10/€1.40 per km and €0.39/0.49 per minute waiting.  </li>
+                    <li> If a ride is over 15km, after the 15km mark, fares will be charged at €1.45/€1.75 per km and €0.51/€0.62 per minute waiting.</li>
+                </ul>
+                <button type="button" data-toggle= "modal" data-target="#calculator">Click for estimated fare.</button>
+                <button onclick = "smb"> </button>
+               
+            </div>
+        </div>
+        <div id="calculator" class= "modal fade" role= "dialog">
+  <div class="modal-dialog">
+    <div class = "modal-content">
+        <div class = "modal-header">
+             <button type = "button" class = "close" data-dismiss = "modal">x</button>
+            <h3 class = "modeal title"> Fare Calculator</h3>
+        </div>
+        <div class = "modal-body">
+            Distance:<input type="number" id="distance"> <br/>
+            <br/>
+            Tick if Christmas or New Year's Eve: <input type="checkbox" id="holiday"><br/>
+            <br/>
+            Tick if between 20:00 and 8:00: <input type="checkbox" id="rate"><br/>
+            <br/>
+            Estimated Fare: <input type=number id="estimatedFare"> <br/>
+            
+            <button onclick="fareEstimator()">Calculate</button>
+        </div>
+      
+      </div>  
+
+  </div>
+</div>
+     </div>
+    <div id = "footer" class="blue">
+        <div id="container">
+            Created by Karl McSherry - 2016.
+            </div>
+        </div>
+        
+    
+            
+        
+    </body>
+             <script type=text/javascript src="scripts.js"> </script>
+</html>
