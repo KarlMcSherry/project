@@ -1,4 +1,4 @@
-#nav1 {
+.nav1 {
     color:white;
 }
 #nav2 {
@@ -26,14 +26,14 @@
 }
 .blue {
     background:#ADD8E6;
-    color:white; 
-    box-shadow: 1px 1px 2px 1px grey;
+    color:white;  
+	box-shadow: 1px 1px 2px 1px grey;
+}
+.border {
+	    border-radius: 25px;		
 }
 .top {
     clear:both; 
-}
-#cent {
-    float:left; 
 }
 .margin {
     margin-top:1%;
@@ -54,6 +54,10 @@ clear:both;
 .frontimages {
     height:100%;
     width:100%;
+	border-style:solid; 
+	border-color:grey;
+	border-width:2px;
+
 }
 }
 .floatleft {
@@ -73,9 +77,6 @@ clear:both;
     opacity:0.5;
 }
 
-input {
-    color:black;
-}
 #footer {
     height:50px;
     margin-top: 1%;

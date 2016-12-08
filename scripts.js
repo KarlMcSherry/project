@@ -7,10 +7,10 @@ function fareEstimator () {
     if (dm_distance <= 15) {
         if (dm_rate === true || dm_holiday === true)
             {
-                estimatedCost = (4.00) + ((dm_distance - 0.5) * 1.40);
+                estimatedCost = ((dm_distance - 0.5) * 1.40);
     } 
         else {
-        estimatedCost = ((dm_distance - 0.5) * 1.10) + 3.60;    
+        estimatedCost = ((dm_distance - 0.5) * 1.10);    
     }
     }               
     
@@ -18,14 +18,14 @@ function fareEstimator () {
         if (dm_rate === true || dm_holiday == true)
             {
             estimatedCost = (((15 - .5) * 1.40) +
-            ((dm_distance - 15) * 1.75)) + 4;
+            ((dm_distance - 15) * 1.75))
     }
         else {
         estimatedCost = (((15 - .5) * 1.10) + 
-            ((dm_distance - 15) * 1.45)) + 3.60;    
+            ((dm_distance - 15) * 1.45));    
     }
     }
-    var output = estimatedCost.toFixed(2);
+    var output = estimatedCost.toPrecision(4);
     document.getElementById("estimatedFare").value = output;
 }
 
