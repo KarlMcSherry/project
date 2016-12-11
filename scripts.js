@@ -32,5 +32,16 @@ function fareEstimator () {
 function changeStyle (style) {
     document.getElementById("theme").setAttribute("href", style );
 }
+
+function ageCheck (){
+    var age = prompt("How old are you?");
     
+        if (age > 17){
+            alert ("Welcome!");
+        }
+        else {
+            alert ("Sorry, you are too young for this page.");
+            document.location.href = "index.html";
+        }
+}
 

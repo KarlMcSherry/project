@@ -87,7 +87,6 @@
                     <li> If a ride is over 15km, after the 15km mark, fares will be charged at &euro;1.45/&euro;1.75 per km and &euro;0.51/&euro;0.62 per minute waiting.</li>
                 </ul>
                 <button type="button" data-toggle= "modal" data-target="#calculator">Click for estimated fare.</button>
-                <button onclick = "smb"> </button>
                
             </div>
         </div>
@@ -105,7 +104,7 @@
             <br/>
             Tick if between 20:00 and 8:00: <input type="checkbox" id="rate"><br/>
             <br/>
-            Estimated Fare: <input type=number id="estimatedFare"> <br/>
+            Estimated Fare: <input type=number id="estimatedFare" disabled> <br/>
             
             <button onclick="fareEstimator()">Calculate</button>
         </div>
