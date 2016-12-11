@@ -30,7 +30,7 @@ function fareEstimator () {
 }
 
 function changeStyle (style) {
-    document.getElementById("theme").setAttribute("href", style );
+    document.getElementById("theme").setAttribute("href", style ) ;
 }
 
 function ageCheck (){
