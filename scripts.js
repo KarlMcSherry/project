@@ -29,3 +29,8 @@ function fareEstimator () {
     document.getElementById("estimatedFare").value = output;
 }
 
+function changeStyle (style) {
+    document.getElementById("theme").setAttribute("href", style );
+}
+    
+

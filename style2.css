@@ -8,13 +8,13 @@
 }
 .jumbotron {
     clear:both; 
-    background:#ADD8E6; 
+    background:black; 
     color:white; 
     margin-bottom:4px; 
     box-shadow: 1px 1px 2px 1px grey; 
 }
 .blue {
-    background:#ADD8E6;
+    background:black;
     color:white;  
 	box-shadow: 1px 1px 2px 1px grey;
 }
