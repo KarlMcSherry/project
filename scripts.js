@@ -29,9 +29,6 @@ function fareEstimator () {
     document.getElementById("estimatedFare").value = output;
 }
 
-function changeStyle (style) {
-    document.getElementById("theme").setAttribute("href", style ) ;
-}
 function ageCheck (){
     var age = prompt("How old are you?");
     
@@ -43,4 +40,9 @@ function ageCheck (){
             document.location.href = "index.html";
         }
 }
+
+function changeStyle (style) {
+    document.getElementById("theme").setAttribute("href", style ) ;
+}
+
 
